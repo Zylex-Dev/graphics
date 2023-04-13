@@ -277,199 +277,9 @@ void MainWindow::on_pushButton_Menu_Draw_clicked() // draw
     }
 
     if (!day_flag)
-        switch (combobox_stars)
+
+
     {
-
-//    case 0:
-//    {
-//        QBrush brush;
-//        //brush.setStyle(Qt::SolidPattern);
-//        brush.setColor(Qt::yellow);
-
-//        QPainterPath star; // path for star
-
-//        int x, y;  //coord star
-//        int count = 1000;
-
-//        for (int i = 0; i < count; i++)
-//        {
-//            x = 0 + rand() % 1100;
-//            y = 0 + rand() % 360;
-
-
-//            if ((y > -0.5*x + 350 and x > 360 and x <= 577) or (y > 0.5*x - 230 and x < 800 and x >= 577))
-//            {
-//                count += 1;
-//            }
-//            else {
-//                star.moveTo(x, y);
-//                star.lineTo(x + 5, y + 14);
-//                star.lineTo(x + 20, y + 14);
-//                star.lineTo(x + 6, y + 23);
-//                star.lineTo(x + 13, y + 37);
-//                star.lineTo(x, y + 28);
-//                star.lineTo(x - 13, y + 37);
-//                star.lineTo(x - 7, y + 23);
-//                star.lineTo(x - 20, y + 14);
-//                star.lineTo(x - 4, y + 14);
-//                star.lineTo(x, y);
-//                painter->setPen(Qt::yellow);
-//                painter->setBrush(brush);
-//                painter->drawPath(star);
-
-//            }
-
-//        }
-
-
-
-//        break;
-
-//    }
-
-//    case 1:
-//    {
-//    QBrush brush;
-//    //brush.setStyle(Qt::SolidPattern);
-//    brush.setColor(Qt::yellow);
-
-//    QPainterPath star; // path for star
-
-//    int x, y;  //coord star
-//    int count = 2000;
-
-//    for (int i = 0; i < count; i++)
-
-
-//    {
-//        x = 0 + rand() % 1100;
-//        y = 0 + rand() % 360;
-
-
-//        if ((y > -0.5*x + 350 and x > 360 and x <= 577) or (y > 0.5*x - 230 and x < 800 and x >= 577))
-//        {
-//            count += 1;
-//        }
-//        else {
-//            star.moveTo(x, y);
-//            star.lineTo(x + 5, y + 14);
-//            star.lineTo(x + 20, y + 14);
-//            star.lineTo(x + 6, y + 23);
-//            star.lineTo(x + 13, y + 37);
-//            star.lineTo(x, y + 28);
-//            star.lineTo(x - 13, y + 37);
-//            star.lineTo(x - 7, y + 23);
-//            star.lineTo(x - 20, y + 14);
-//            star.lineTo(x - 4, y + 14);
-//            star.lineTo(x, y);
-//            painter->setPen(Qt::yellow);
-//            painter->setBrush(brush);
-//            painter->drawPath(star);
-
-//        }
-//    }
-
-
-
-
-
-//        break;
-//    }
-//    case 2:
-//    {
-//    QBrush brush;
-//    //brush.setStyle(Qt::SolidPattern);
-//    brush.setColor(Qt::yellow);
-
-//    QPainterPath star; // path for star
-
-//    int x, y;  //coord star
-//    int count = 3000;
-
-//    for (int i = 0; i < count; i++)
-//    {
-//        x = 0 + rand() % 1100;
-//        y = 0 + rand() % 360;
-
-
-//        if ((y > -0.5*x + 350 and x > 360 and x <= 577) or (y > 0.5*x - 230 and x < 800 and x >= 577))
-//        {
-//            count += 1;
-//        }
-//        else {
-//            star.moveTo(x, y);
-//            star.lineTo(x + 5, y + 14);
-//            star.lineTo(x + 20, y + 14);
-//            star.lineTo(x + 6, y + 23);
-//            star.lineTo(x + 13, y + 37);
-//            star.lineTo(x, y + 28);
-//            star.lineTo(x - 13, y + 37);
-//            star.lineTo(x - 7, y + 23);
-//            star.lineTo(x - 20, y + 14);
-//            star.lineTo(x - 4, y + 14);
-//            star.lineTo(x, y);
-//            painter->setPen(Qt::yellow);
-//            painter->setBrush(brush);
-//            painter->drawPath(star);
-
-//        }
-
-
-
-//    }
-
-
-
-//        break;
-//    }
-//    case 3:
-//    {
-//            QBrush brush;
-//            //brush.setStyle(Qt::SolidPattern);
-//            brush.setColor(Qt::yellow);
-
-//            QPainterPath star; // path for star
-
-//            int x, y;  //coord star
-//            int count = 4000;
-
-//            for (int i = 0; i < count; i++)
-//            {
-//                x = 0 + rand() % 1100;
-//                y = 0 + rand() % 360;
-
-
-//                if ((y > -0.5*x + 350 and x > 360 and x <= 577) or (y > 0.5*x - 230 and x < 800 and x >= 577))
-//                {
-//                    count += 1;
-//                }
-//                else {
-//                    star.moveTo(x, y);
-//                    star.lineTo(x + 5, y + 14);
-//                    star.lineTo(x + 20, y + 14);
-//                    star.lineTo(x + 6, y + 23);
-//                    star.lineTo(x + 13, y + 37);
-//                    star.lineTo(x, y + 28);
-//                    star.lineTo(x - 13, y + 37);
-//                    star.lineTo(x - 7, y + 23);
-//                    star.lineTo(x - 20, y + 14);
-//                    star.lineTo(x - 4, y + 14);
-//                    star.lineTo(x, y);
-//                    painter->setPen(Qt::yellow);
-//                    painter->setBrush(brush);
-//                    painter->drawPath(star);
-
-//                }
-
-
-
-//        }
-
-
-
-
-
-//    }
         QBrush brush;
         //brush.setStyle(Qt::SolidPattern);
         brush.setColor(Qt::yellow);
@@ -479,15 +289,14 @@ void MainWindow::on_pushButton_Menu_Draw_clicked() // draw
         int x, y;  //coord star
 
 
-        for (int i = 0; i < countstar; i++)
+        for (int i = 0; i < StarAmount; i++)
         {
             x = 0 + rand() % 1100;
             y = 0 + rand() % 360;
 
-
-            if ((y > -0.5*x + 350 and x > 360 and x <= 577) or (y > 0.5*x - 230 and x < 800 and x >= 577))
+            if ((y > -0.5*x + 350 and x > 360 and x <= 577) or (y > 0.5*x - 230 and x < 800 and x >= 577) or (((x - 100)*(x - 100)) + ((y - 100)*(y - 100)) < 10000))
             {
-                countstar += 1;
+                StarAmount += 1;
             }
             else {
                 star.moveTo(x, y);
@@ -528,5 +337,5 @@ void MainWindow::on_pushButton_Menu_Draw_clicked() // draw
 
 void MainWindow::on_spinBox_Stars_valueChanged(int arg1)
 {
-    countstar = arg1;
+    StarAmount = ui->spinBox_Stars->value();
 }

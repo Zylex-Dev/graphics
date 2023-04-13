@@ -41,7 +41,7 @@ private:
     int combobox_house;
     int combobox_time;
     int combobox_stars;
-    int countstar;
+    int StarAmount;
 
 
 };
