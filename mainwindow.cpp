@@ -25,9 +25,6 @@ MainWindow::MainWindow(QWidget *parent) : // constructor
     ui->spinBox_Stars->setRange(0,10000);
 
 
-
-
-
 }
 
 MainWindow::~MainWindow() // destructor
@@ -37,19 +34,7 @@ MainWindow::~MainWindow() // destructor
 
 void MainWindow::on_comboBox_Menu_Color_currentIndexChanged(int index) // house color
 {
-
     combobox_house = ui->comboBox_Menu_Color->currentIndex();
-//    if (index == 0)
-//    {
-//        ui->pushButton_Menu_Draw->blockSignals(true);
-
-
-//    }
-//    else
-//    {
-//        ui->pushButton_Menu_Draw->blockSignals(false);
-//    }
-
 
 }
 
@@ -58,7 +43,6 @@ void MainWindow::on_comboBox_Menu_Time_currentIndexChanged(int index) // day/nig
     combobox_time = ui->comboBox_Menu_Time->currentIndex();
     if (index == 0)
     {
-
         ui->label_Menu_Stars->show();
         ui->spinBox_Stars->show();
     }
@@ -66,42 +50,7 @@ void MainWindow::on_comboBox_Menu_Time_currentIndexChanged(int index) // day/nig
     {
         ui->label_Menu_Stars->hide();
         ui->spinBox_Stars->hide();
-
-//    }
-//    if (index == 2)
-//    {
-//        ui->comboBox_Menu_Stars->hide();
-//        ui->label_Menu_Stars->hide();
-//        ui->label_Menu_Error->hide();
-//        ui->pushButton_Menu_Draw->blockSignals(false);
-//    }
-
-
-
-//    if (index == 2)
-//    {
-//        ui->pushButton_Menu_Draw->blockSignals(false);
-//        ui->comboBox_Menu_Stars->hide();
-//        ui->label_Menu_Stars->hide();
-//        QBrush brush;
-//    }
-//    if (index == 0)
-//    {
-
-//        ui->pushButton_Menu_Draw->blockSignals(true);
-//        ui->comboBox_Menu_Stars->show();
-//        ui->label_Menu_Stars->show();
-//    }
-//    else if (index == 1)
-//    {
-//        ui->pushButton_Menu_Draw->blockSignals(false);
-//        ui->comboBox_Menu_Stars->show();
-//        ui->label_Menu_Stars->show();
-//    }
-
-
-
-}
+    }
 }
 
 
@@ -147,19 +96,8 @@ void MainWindow::on_pushButton_Menu_Draw_clicked() // draw
     painter->drawLine(0,400,377,400);
     painter->drawLine(777,400,1131,400);
 
-    // sun or moon
-    //painter->drawEllipse(30,10,100,100);
-
     QBrush brush;
     brush.setStyle(Qt::SolidPattern);
-//    brush.setColor(QColor::fromRgb(128,64,48)); // brown door
-//    painter->setBrush(brush);
-//    painter->fillRect(550,400,60,90,brush);
-
-//    brush.setColor(QColor::fromRgb(128,166, 255));
-//    painter->setBrush(brush);
-//    painter->fillRect(410,250,50,100,brush); // blue window 1
-//    painter->fillRect(694,250,50,100,brush); // blue window 2
 
     // dark green roof (with adding a polygon to color it)
     brush.setColor(QColor::fromRgb(30,89,69));
@@ -189,17 +127,6 @@ void MainWindow::on_pushButton_Menu_Draw_clicked() // draw
 
     case 0: // yellow
     {
-//        pen->setColor(QColor::fromRgb(253,233,16));
-//        painter->setPen(*pen);
-//        brush.setColor(QColor::fromRgb(253,233,16));
-//        painter->setBrush(brush);
-//        QPolygonF polygon_house1, polygon_house2;
-//        polygon_house1 << QPointF(382,205) << QPointF(772,205) << QPointF(772,245) << QPointF(382, 245);
-//        polygon_house2 << QPointF(382,245) << QPointF(405,245) << QPointF(405,485) << QPointF(382, 485);
-
-
-//        painter->drawPolygon(polygon_house1,Qt::OddEvenFill);
-//        painter->drawPolygon(polygon_house2,Qt::OddEvenFill);
 
         QBrush brush;
         brush.setStyle(Qt::SolidPattern);
@@ -292,12 +219,6 @@ void MainWindow::on_pushButton_Menu_Draw_clicked() // draw
         ui->label_Image_Cloud2->hide();
 
         ui->widget_Image->repaint();
-
-
-
-
-
-
 
         break;
     }
@@ -589,15 +510,6 @@ void MainWindow::on_pushButton_Menu_Draw_clicked() // draw
         }
 
 
-
-
-
-
-
-
-
-
-
     }
 
 
@@ -612,8 +524,6 @@ void MainWindow::on_pushButton_Menu_Draw_clicked() // draw
     pen = nullptr;
     painter = nullptr;
 }
-
-
 
 
 void MainWindow::on_spinBox_Stars_valueChanged(int arg1)
