@@ -21,7 +21,7 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-private slots:
+private slots: // slots
     void on_comboBox_Menu_Color_currentIndexChanged(int index);
 
     void on_comboBox_Menu_Time_currentIndexChanged(int index);
@@ -30,13 +30,12 @@ private slots:
 
     void on_pushButton_Image_BackToMenu_clicked();
 
-
-
-
     void on_spinBox_Stars_valueChanged(int arg1);
 
 private:
     Ui::MainWindow *ui;
+
+    // variables for comboboxes
 
     int combobox_house;
     int combobox_time;

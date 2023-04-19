@@ -10,11 +10,11 @@ MainWindow::MainWindow(QWidget *parent) : // constructor
 {
     ui->setupUi(this);
 
-    ui->stackedWidget->setCurrentIndex(0);
+    // settings
 
+    ui->stackedWidget->setCurrentIndex(0);
     ui->comboBox_Menu_Color->setCurrentIndex(0);
     ui->comboBox_Menu_Time->setCurrentIndex(0);
-
 
     ui->label_Image_PixMap->hide();
     ui->label_Image_Cloud1->hide();
@@ -54,7 +54,7 @@ void MainWindow::on_comboBox_Menu_Time_currentIndexChanged(int index) // day/nig
 }
 
 
-void MainWindow::on_pushButton_Image_BackToMenu_clicked()
+void MainWindow::on_pushButton_Image_BackToMenu_clicked() // Back To menu pushbutton
 {
     ui->stackedWidget->setCurrentIndex(0);
     update();
@@ -335,7 +335,7 @@ void MainWindow::on_pushButton_Menu_Draw_clicked() // draw
 }
 
 
-void MainWindow::on_spinBox_Stars_valueChanged(int arg1)
+void MainWindow::on_spinBox_Stars_valueChanged(int arg1) // value of stars
 {
     StarAmount = ui->spinBox_Stars->value();
 }
